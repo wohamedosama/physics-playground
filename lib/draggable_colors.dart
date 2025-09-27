@@ -94,24 +94,24 @@ class _DraggableColorsState extends State<DraggableColors> {
     );
   }
 
-  BoxDecoration _buildDraggableTargetBoxDecoration(
-    bool isActive,
-    Color color,
-    String colorKey,
-  ) {
-    return BoxDecoration(
-      borderRadius: BorderRadius.circular(16),
-      border: Border.all(width: 2, color: isActive ? Colors.black : color),
-      color: matchedBall[colorKey]!
-          ? color.withValues(alpha: 0.6)
-          : color.withValues(alpha: 0.2),
-    );
-  }
-
   BoxDecoration _buildBallContainerBoxDecoration(Color color, double opacity) {
     return BoxDecoration(
       color: color.withValues(alpha: opacity),
       shape: BoxShape.circle,
     );
   }
+}
+
+BoxDecoration _buildDraggableTargetBoxDecoration(
+  bool isActive,
+  Color color,
+  String colorKey,
+) {
+  return BoxDecoration(
+    borderRadius: BorderRadius.circular(16),
+    border: Border.all(width: 2, color: isActive ? Colors.black : color),
+    color: matchedBall[colorKey]!
+        ? color.withValues(alpha: 0.6)
+        : color.withValues(alpha: 0.2),
+  );
 }

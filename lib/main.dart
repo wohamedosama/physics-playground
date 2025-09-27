@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:physics_playground/draggable_colors.dart';
 
 void main() {
   runApp(PhysicsPlayground());
@@ -9,6 +10,9 @@ class PhysicsPlayground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: DraggableColors(),
+    );
   }
 }

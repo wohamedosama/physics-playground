@@ -25,9 +25,7 @@ This isn’t just another demo – it’s a **mini interactive physics simulatio
 
 ## 🎬 **See It In Action**
 
-
-
-
+![Interactive Physics Widget](https://github.com/user-attachments/assets/dfffc7c9-d688-410b-bc20-05c4cbc34e0e)
 
 ---
 
